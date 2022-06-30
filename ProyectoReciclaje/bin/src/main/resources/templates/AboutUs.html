@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About Us</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
+            <ul class="nav nav-tabs justify-content-end">
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><center>About Us</center></h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="userList" class="table table-bordered table-hover table-striped">
+                                        <div class="container">
+                                            
+                                                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                                 
+                                                  <div class="col">
+                                                    <img th:src="@{images/facebook.png}" class="card-img-top" alt="...">
+                                                    <div class="p-3 border bg-light">Facebook</div>
+                                                    <div class="p-3 border bg-light">facebook.com/</div>
+                                                  </div>
+                                                  
+                                                 
+                                                  <div class="col">
+                                                    <img th:src="@{images/Twitter.jpg}" class="card-img-top" alt="...">
+                                                    <div class="p-3 border bg-light">Twitter</div>
+                                                    <div class="p-3 border bg-light">twitter.com/</div>
+                                                  </div>
+                                                 
+                                                  <div class="col">
+                                                    <img th:src="@{images/Whatsapp.png}" class="card-img-top" alt="...">
+                                                    <div class="p-3 border bg-light">Whatsapp</div>
+                                                    <div class="p-3 border bg-light">https://wa.me/</div>
+                                                  </div>
+                                                  
+                                                  <div class="col">
+                                                    <img th:src="@{images/Instagram.jpg}" class="card-img-top" alt="...">
+                                                    <div class="p-3 border bg-light">Instagram</div>
+                                                    <div class="p-3 border bg-light">instagra.com/</div>
+                                                  </div>
+
+                                                  <div class="col">
+                                                    
+                                                    <h4><center><div class="p-3 border bg-light">“LA CIUDAD MÁS LIMPIA, ES LA QUE MENOS SE ENSUCIA”</div>
+                                                  </div></center></h4>
+                                    </table>
+                                    <a href="/menu" ><input type="button" value="Volver" class="btnRetroceder2"></a>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    </body>
+</html>

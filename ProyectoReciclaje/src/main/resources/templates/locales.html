@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Locales</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="volver-opcion">
+        <a href="/menu" class="btn btn-primary">
+          <h4><i class="fas fa-home"></i>Volver</h4>
+        </a>
+      </div>
+    </header>
+    <div class="container-fluid align-items-center main-container">
+      <div class="card-header mb-3 text-center"><h1>Locales</h1></div>
+      <div class="row text-center">
+        <div class="col-sm">
+          <div class="card mx-auto text-center card-local" style="width: 13rem;">
+            <img th:src="@{images/local1.jpg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nombre: Recitodo</p>
+              <p class="card-text">Direccion: Recitodo, 34 Avenida Nte. 211, San Salvador</p>
+              <a href="https://goo.gl/maps/7Nu7Zvb8omAJ3yhs7">
+                Ver en mapa</a>
+              <form th:action="@{/localesInfo}" method="post">
+                <input type="text" value="Recitodo" readonly="readonly" name="nombre" style="visibility: hidden" />
+                <input type="submit" value="Conocer mas" class="btn btn-primary">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card mx-auto text-center card-local" style="width: 13rem;">
+            <img th:src="@{images/local1.jpg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nombre: Alas Doradas</p>
+              <p class="card-text">Direccion: Km 27 1/2 Carretera a, Santa Ana</p>
+              <a href="http://maps.google.com/maps?q=Alas Doradas, Santa Ana">
+                Ver en mapa</a>
+              <div class="container">
+                <form th:action="@{/localesInfo}" method="post">
+                  <input type="text" value="Alas Doradas" readonly="readonly" name="nombre" style="visibility: hidden" />
+                  <input type="submit" value="Conocer mas" class="btn btn-primary">
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card mx-auto text-center card-local" style="width: 13rem;">
+            <img th:src="@{images/local1.jpg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nombre: Recicla 503</p>
+              <p class="card-text">Direccion: Calle L-3, Polígono D, Lotes 1 y 2, Zona Industrial Merliot La Libertad, El Salvador, Centroamérica, Cd Merliot</p>
+              <a href="https://goo.gl/maps/khwZEHmp58gDhTkz7">
+                Ver en mapa</a>
+              <div class="container">
+                <form th:action="@{/localesInfo}" method="post">
+                  <input type="text" value="Recicla 503" readonly="readonly" name="nombre" style="visibility: hidden" />
+                  <input type="submit" value="Conocer mas" class="btn btn-primary">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card mx-auto text-center card-local" style="width: 13rem;">
+            <img th:src="@{images/local1.jpg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nombre: Recicladora La Centroamericana S.A.</p>
+              <p class="card-text">Direccion: por Colegio La Divina Providencia, Alameda Juan Pablo II, San Salvador</p>
+              <a href="https://goo.gl/maps/SDLZBCYJbt75DFRE6">
+                Ver en mapa</a>
+              <div class="container">
+                <form th:action="@{/localesInfo}" method="post">
+                  <input type="text" value="Recicladora La Centroamericana S.A" readonly="readonly" name="nombre" style="visibility: hidden" />
+                  <input type="submit" value="Conocer mas" class="btn btn-primary">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100"></div>
+
+        <div class="col-sm">
+          <div class="card mx-auto text-center card-local" style="width: 13rem;">
+            <img th:src="@{images/local1.jpg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nombre: RECITEC</p>
+              <p class="card-text">Direccion: Calle Circunvalación, Polígono G No.2, Antiguo Cuscatlán</p>
+              <a href="https://goo.gl/maps/yakHuQieAaApvZMS9">
+                Ver en mapa</a>
+              <div class="container">
+                <form th:action="@{/localesInfo}" method="post">
+                  <input type="text" value="RECITEC" readonly="readonly" name="nombre" style="visibility: hidden" />
+                  <input type="submit" value="Conocer mas" class="btn btn-primary">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card mx-auto text-center card-local" style="width: 13rem;">
+            <img th:src="@{images/local1.jpg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nombre: RECICLADORA JERUSALEM</p>
+              <p class="card-text">Direccion: Calle Circunvalación, Polígono G No.2, Antiguo Cuscatlán</p>
+              <a href="https://goo.gl/maps/fKaZGohhGHtAGy366">
+                Ver en mapa</a>
+              	<form th:action="@{/localesInfo}" method="post">
+                  <input type="text" value="RECICLADORA JERUSALEM" readonly="readonly" name="nombre" style="visibility: hidden" />
+                  <input type="submit" value="Conocer mas" class="btn btn-primary">
+                </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card mx-auto text-center card-local" style="width: 13rem;">
+            <img th:src="@{images/local1.jpg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nombre: Parque Industrial Verde</p>
+              <p class="card-text">Direccion: C. Agua Caliente Km 5, Soyapango</p>
+              <a href="https://goo.gl/maps/3CDkBJz6Qtwo4p117">
+                Ver en mapa</a>
+              <form th:action="@{/localesInfo}" method="post">
+                  <input type="text" value="Parque Industrial Verde" readonly="readonly" name="nombre" style="visibility: hidden" />
+                  <input type="submit" value="Conocer mas" class="btn btn-primary">
+                </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card mx-auto text-center card-local" style="width: 13rem;">
+            <img th:src="@{images/local1.jpg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Nombre: Recuperadora de Carton TM SA de CV</p>
+              <p class="card-text">Direccion: 6a Calle Poniente 1313, San Salvador</p>
+              <a href="https://goo.gl/maps/NtAwXodoHBVsytEJ9">
+                Ver en mapa</a>
+              <form th:action="@{/localesInfo}" method="post">
+                  <input type="text" value="Recuperadora de Carton TM SA de CV" readonly="readonly" name="nombre" style="visibility: hidden" />
+                  <input type="submit" value="Conocer mas" class="btn btn-primary">
+                </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100"></div>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

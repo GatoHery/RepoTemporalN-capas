@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <title>Login</title>
+
+        <!--JQUERY-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <!-- Los iconos tipo Solid de Fontawesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+        <!-- Nuestro css-->
+        <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm div-card ml-2 text-white">
+                    <div class="container-fluid2" style="max-width: 30rem;">
+                        <div>
+                            <h1>Tomemos conciencia</h1>
+                        </div>
+                        <div class="card-body">
+                            <h5>¿Reciclar?</h5>
+                            <p>La recolección y el procesamiento de desechos de papel y cartón,
+                                vidrio o plástico supone crear nuevos productos basados en esos mismos materiales.
+                                Una nueva oportunidad para la Tierra, a la que se puede proteger si se entienden los
+                                beneficios del reciclaje,
+                                la manera correcta separar los residuos y los retos a los que se enfrenta esta actividad
+                                en los próximos años.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="container-fluid main-section">
+                        <div class="container form-div">
+                            <div class="card-header">
+                                <form class="col-12" th:action="@{/confirm}" method="post">
+
+                                    <h3 class="text-white">Iniciar Sesión</h3>
+                                    <div class="form-group" id="user-group">
+                                        <input type="text" class="form-control" placeholder="usuario" name="nombre" />
+                                    </div>
+                                    <div class="form-group" id="contrasena-group">
+                                        <input type="password" class="form-control" placeholder="Contrasena"
+                                            name="contra" />
+                                    </div>
+                                    <div class="">
+                                        <input type="submit" value="Ingresar" class="btn btn-primary btn">
+                                    </div>
+                                </form>
+                                <div class="container text-white mt-2">
+                                    <p>¿Aún no tienes cuenta? <a href="/registrarse" class="btn btn-primary btn-sm">
+                                            Registrate aquí</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

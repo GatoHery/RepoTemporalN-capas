@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tips</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
+            <ul class="nav nav-tabs justify-content-end">
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><center>Tips</center></h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="userList" class="table table-bordered table-hover table-striped">
+                                    <div class="container">
+                                        
+                                            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                              <div class="col">
+                                                  
+                                                <a href="https://youtu.be/3gJi5i5XDG4"><img th:src="@{images/video.png}" class="card-img-top" alt="..."></a>
+                                              </div>
+                                              <div class="col">
+                                                <div class="p-3 border bg-light">Nombre:</div>
+                                                <div class="p-3 border bg-light">Como hacer papel reciclado</div>
+                                              </div>
+                                              
+                                              <div class="col">
+                                                <a href="https://youtu.be/xCaI-5WVRlY"><img th:src="@{images/video.png}" class="card-img-top" alt="..."></a>
+                                              </div>
+                                              <div class="col">
+                                                <div class="p-3 border bg-light">Nombre:</div>
+                                                <div class="p-3 border bg-light">Manualidades con plástico</div>
+                                              </div>
+                                              <div class="container">
+                                        
+                                                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                                  <div class="col">
+                                                    <a href="https://youtu.be/gT3-n7gYEP0"><img th:src="@{images/video.png}" class="card-img-top" alt="..."></a>
+                                                </div>
+                                                <div class="col">
+                                                  <div class="p-3 border bg-light">Nombre:</div>
+                                                  <div class="p-3 border bg-light">Dibuja en plástico, haz llaveros</div>
+                                                </div>
+                                                  
+                                                  <div class="col">
+                                                    <a href="https://youtu.be/WW0A5K7JuqU"><img th:src="@{images/video.png}" class="card-img-top" alt="..."></a>
+                                                </div>
+                                                <div class="col">
+                                                  <div class="p-3 border bg-light">Nombre:</div>
+                                                  <div class="p-3 border bg-light">Manualidades para realizar com carton</div>
+                                                </div>
+                                                  <div class="container">
+                                        
+                                                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                                      <div class="col">
+                                                        <a href="https://www.youtube.com/watch?v=lnI0Py1dPkg"><img th:src="@{images/video.png}" class="card-img-top" alt="..."></a>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="p-3 border bg-light">Nombre:</div>
+                                                      <div class="p-3 border bg-light">Importancia del reciclaje</div>
+                                                    </div>
+                                                      
+                                                      <div class="col">
+                                                        <a href="https://www.youtube.com/watch?v=R3RVUA3dwXw"><img th:src="@{images/video.png}" class="card-img-top" alt="..."></a>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="p-3 border bg-light">Nombre:</div>
+                                                      <div class="p-3 border bg-light">15 Magníficas Ideas de Reciclaje para Organizar y Decorar Tú Hogar</div>
+                                                    </div>
+                                                      <div class="container">
+                                        
+                                                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                                          <div class="col">
+                                                            <a href="https://www.youtube.com/watch?v=auj4bXMHL-8"><img th:src="@{images/video.png}" class="card-img-top" alt="..."></a>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="p-3 border bg-light">Nombre:</div>
+                                                      <div class="p-3 border bg-light">¿Por qué es importante reciclar?</div>
+                                                    </div>
+                                                          
+                                                          <div class="col">
+                                                            <a href="https://www.youtube.com/watch?v=8wGg3lo-SVU"><img th:src="@{images/video.png}" class="card-img-top" alt="..."></a>
+                                                    </div>
+                                                    <div class="col">
+                                                      <div class="p-3 border bg-light">Nombre:</div>
+                                                      <div class="p-3 border bg-light">Asi funciona la planta de reciclaje mas grande del mundo</div>
+                                                    </div>
+                                            </div>
+                                          </div>
+                                </table>
+                                <a href="/menu" ><input type="button" value="Volver" class="btnRetroceder2"></a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Vista de Productos de Usuario</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+</head>
+<body>
+    <div class="container">
+        <div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
+            <ul class="nav nav-tabs justify-content-end">
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><center>Productos</center></h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="userList" class="table table-bordered table-hover table-striped">
+                                    <div class="container">
+                                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                            <div class="card" style="width: 13rem;">
+                                                <img th:src="@{images/papel.png}" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <p class="card-text">Papel</p>
+                                                  <p class="card-text">Descripcion: El reciclaje de papel es el proceso de recuperación de 
+                                                  papel ya creado o utilizado para transformarlo en nuevos productos de papel.</p>
+                                                  <p class="card-text">Dinero: $0.08 por libra</p>
+                                                </div>
+                                              </div>
+                                          <div class="col">
+                                            <div class="card" style="width: 14rem;" >
+                                                <img th:src="@{images/plastico.jpeg}" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text">Plastico</p>
+                                                    <p class="card-text">Descripcion: El reciclado de plástico es el proceso de 
+                                                    recuperación de desechos de plásticos.</p>
+                                                    <p class="card-text">Dinero: entre $0.08 y $0.11 por 543 gramos</p>
+                                                </div>
+                                              </div>                                            
+                                          </div>
+                                          <div class="card" style="width: 13rem;">
+                                            <img th:src="@{images/metal.jpg}" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Metal</p>
+                                                <p class="card-text">Descripcion: Lorem ipsum dolor</p>
+                                                <p class="card-text">Dinero: $0.06 por libra</p>
+                                            </div>
+                                          </div>                                       
+                                        </div>
+                                            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                              <div class="card" style="width: 13rem;">
+                                                <img th:src="@{images/vidrio.png}" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text">Vidrio</p>
+                                                    <p class="card-text">Descripcion: Lorem ipsum dolor</p>
+                                                </div>
+                                              </div>
+                                          <div class="col">
+                                            <div class="card" style="width: 14rem;">
+                                                <img th:src="@{images/madera.jpg}" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text">Madera</p>
+                                                    <p class="card-text">Descripcion: Lorem ipsum dolor</p>
+                                                </div>
+                                              </div>                                            
+                                          </div>
+                                          <div class="card" style="width: 13rem;">
+                                            <img th:src="@{images/pilas.jpg}" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Pilas y Baterias</p>
+                                                <p class="card-text">Descripcion: Lorem ipsum dolor</p>
+                                            </div>
+                                          </div>     
+                                                                        
+                                        </div>
+                                      </div>
+                                        </div>
+                                      </div>
+                                     
+                                </table>
+                                <a href="/menu" ><input type="button" value="volver" class="btnRetroceder2"></a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>

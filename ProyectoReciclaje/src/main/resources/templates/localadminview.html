@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Locales Admin View</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+</head>
+<body>
+    <div class="container">
+        <div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
+            <ul class="nav nav-tabs justify-content-end">
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><center>Locales Admin View</center></h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="userList" class="table table-bordered table-hover table-striped">
+                                    <div class="container">
+                                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                            <div class="card" style="width: 13rem;">
+                                                <img src="static/img/local1.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <p class="card-text">Nombre:</p>
+                                                  <p class="card-text">Direccion: Lorem ipsum dolor</p>
+                                                </div>
+                                              </div>
+                                          <div class="col">
+                                            <div class="card" style="width: 13rem;" >
+                                                <img src="static/img/local1.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text">Nombre:</p>
+                                                    <p class="card-text">Direccion: Lorem ipsum dolor</p>
+                                                </div>
+                                              </div>                                            
+                                          </div>
+                                          <div class="card" style="width: 13rem;">
+                                            <img src="static/img/local1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Nombre:</p>
+                                                <p class="card-text">Direccion: Lorem ipsum dolor</p>
+                                            </div>
+                                          </div>                                       
+                                        </div>
+                                            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                              <div class="card" style="width: 13rem;">
+                                                <img src="static/img/local1.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text">Nombre:</p>
+                                                    <p class="card-text">Direccion: Lorem ipsum dolor</p>
+                                                </div>
+                                              </div>
+                                          <div class="col">
+                                            <div class="card" style="width: 13rem;">
+                                                <img src="static/img/local1.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text">Nombre:</p>
+                                                    <p class="card-text">Direccion: Lorem ipsum dolor</p>
+                                                </div>
+                                              </div>                                            
+                                          </div>
+                                          <div class="card" style="width: 13rem;">
+                                            <img src="static/img/local1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Nombre:</p>
+                                                <p class="card-text">Direccion: Lorem ipsum dolor</p>
+                                            </div>
+                                          </div>                                       
+                                        </div>
+                                      </div>
+                                        </div>
+                                      </div>
+                                </table>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                  </svg>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Insignias</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+</head>
+<body>
+    <div class="container">
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><center>Insignias</center></h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="userList" class="table table-bordered table-hover table-striped">
+                                    <div class="container">
+                                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                            <div class="card" style="width: 15rem;">
+                                                <form th:action="@{/insigniasInfo}" method="post">
+                                                	<img th:src="@{images/reciclaje.png}" class="card-img-top" alt="...">
+                                                	<input type="text" value="reciclaje principiante" readonly="readonly" name="nombre" style="visibility: hidden"/>
+													 <input type="submit" value="Ingresar" class="btn btn-primary">
+                                                </form>
+                                              </div>
+                                          <div class="col">
+                                            <div class="card" style="width: 15rem;" >
+                                                <form th:action="@{/insigniasInfo}" method="post">
+                                                	<img th:src="@{images/mujeres.jpg}" class="card-img-top" alt="...">
+                                                	<input type="text" value="de 3 en 3" readonly="readonly" name="nombre" style="visibility: hidden"/>
+													 <input type="submit" value="Ingresar" class="btn btn-primary">
+                                                </form>
+                                              </div>                                            
+                                          </div>
+                                          <div class="card" style="width: 15rem;">
+                                            <img th:src="@{images/hombres.png}" class="card-img-top" alt="...">
+                                            <a href="/insigniasInfo" ><input type="button" value="Revisar" class="btnInsignia"></a>
+                                          </div>      
+                                          <div class="card" style="width: 15rem;">
+                                            <img th:src="@{images/basurero.jpg}" class="card-img-top" alt="...">
+                                            <a href="/insigniasInfo" ><input type="button" value="Revisar" class="btnInsignia"></a>
+                                          </div>                                   
+                                        </div>
+                                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                            <div class="card" style="width: 15rem;">
+                                                <img th:src="@{images/imagen.png}" class="card-img-top" alt="...">
+												<a href="/insigniasInfo" ><input type="button" value="Revisar" class="btnInsignia"></a>
+                                              </div>
+                                          <div class="col">
+                                            <div class="card" style="width: 15rem;" >
+                                                <img th:src="@{images/hombrear.jpg}" class="card-img-top" alt="...">
+                                                <a href="/insigniasInfo" ><input type="button" value="Revisar" class="btnInsignia"></a>
+                                              </div>                                            
+                                          </div>
+                                          <div class="card" style="width: 15rem;">
+                                            <img th:src="@{images/copa.png}" class="card-img-top" alt="...">
+                                            <a href="/insigniasInfo" ><input type="button" value="Revisar" class="btnInsignia"></a>
+                                          </div>      
+                                          <div class="card" style="width: 15rem;">
+                                            <img th:src="@{images/medalla.png}" class="card-img-top" alt="...">
+                                            <a href="/insigniasInfo" ><input type="button" value="Revisar" class="btnInsignia"></a>
+                                          </div>
+                                      </div>
+                                        </div>
+                                      </div>
+                                     
+                                </table>
+                                <a href="/menu" ><input type="button" value="volver" class="btnRetroceder"></a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>
